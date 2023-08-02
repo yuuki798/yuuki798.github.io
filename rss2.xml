@@ -9,7 +9,7 @@
     <atom:link href="https://cjliblog.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>凡事皆有可能，永远别说永远</description>
-    <pubDate>Wed, 02 Aug 2023 04:51:14 GMT</pubDate>
+    <pubDate>Wed, 02 Aug 2023 05:02:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -29,6 +29,8 @@
       <content:encoded><![CDATA[<p>哎呀</p>]]></content:encoded>
       
       
+      
+      <category domain="https://cjliblog.top/tags/%E6%A0%87%E7%AD%BE/">标签</category>
       
       
       <comments>https://cjliblog.top/2023/08/02/hi/#disqus_thread</comments>
