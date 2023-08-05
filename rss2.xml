@@ -15,8 +15,29 @@
     <atom:link href="https://cjliblog.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>凡事皆有可能</description>
-    <pubDate>Fri, 04 Aug 2023 13:35:47 GMT</pubDate>
+    <pubDate>Sat, 05 Aug 2023 09:54:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>NC16589机器翻译【题解】【入门向】</title>
+      <link>https://cjliblog.top/2023/08/05/2023-08-05-NC16589%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E3%80%90%E9%A2%98%E8%A7%A3%E3%80%91%E3%80%90%E5%85%A5%E9%97%A8%E5%90%91%E3%80%91/</link>
+      <guid>https://cjliblog.top/2023/08/05/2023-08-05-NC16589%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E3%80%90%E9%A2%98%E8%A7%A3%E3%80%91%E3%80%90%E5%85%A5%E9%97%A8%E5%90%91%E3%80%91/</guid>
+      <pubDate>Fri, 04 Aug 2023 16:00:00 GMT</pubDate>
+      
+      <description>大家好，我是description</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>题目来源：<a href="https://ac.nowcoder.com/acm/problem/16589">机器翻译</a></p><p><code>hello</code></p><p>首先明确需求：</p><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//一个内存，输入，存储查字典次数的变量</span></span><br><span class="line">vector&lt;<span class="type">int</span>&gt;a;<span class="comment">//内存容器</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    cin&gt;&gt;b[i];<span class="comment">//输入</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> ans=<span class="number">0</span>;<span class="comment">//存储查字典次数的变量</span></span><br></pre></td></tr></table></figure><p>在循环内，我们需要知道是否内存内有和输入重复的元素：</p><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> it=a.<span class="built_in">begin</span>();it!=a.<span class="built_in">end</span>();it++) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(*it==b[i]) flag=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>如果没有重复，我会push进一个输入：</p><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(flag) </span><br><span class="line">&#123;</span><br><span class="line">    a.<span class="built_in">push_back</span>(b[i]);ans++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>另外，如果内存达到上限，我会把内存第一个元素删掉：</p><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(a.<span class="built_in">size</span>()==m+<span class="number">1</span>) a.<span class="built_in">erase</span>(a.<span class="built_in">begin</span>());</span><br></pre></td></tr></table></figure><p>就OK辽！</p><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//一个内存，输入，存储查字典次数的变量</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;a;</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> m,n;</span><br><span class="line">    cin&gt;&gt;m&gt;&gt;n;</span><br><span class="line">    <span class="type">int</span> b[<span class="number">10000</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">bool</span> flag=<span class="number">1</span>;</span><br><span class="line">        cin&gt;&gt;b[i];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> it=a.<span class="built_in">begin</span>();it!=a.<span class="built_in">end</span>();it++) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(*it==b[i]) flag=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(flag) </span><br><span class="line">        &#123;</span><br><span class="line">            a.<span class="built_in">push_back</span>(b[i]);ans++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(a.<span class="built_in">size</span>()==m+<span class="number">1</span>) a.<span class="built_in">erase</span>(a.<span class="built_in">begin</span>());</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      
+      <category domain="https://cjliblog.top/tags/%E7%89%9B%E5%AE%A2%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E7%B2%BE%E9%80%89/">牛客算法基础精选</category>
+      
+      
+      <comments>https://cjliblog.top/2023/08/05/2023-08-05-NC16589%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E3%80%90%E9%A2%98%E8%A7%A3%E3%80%91%E3%80%90%E5%85%A5%E9%97%A8%E5%90%91%E3%80%91/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>NC16622多项式输出【题解】【入门向】</title>
