@@ -3,18 +3,18 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>CJli&#39;s blog</title>
+    <title>yuuki&#39;s blog</title>
     <link>https://cjliblog.top/</link>
     
     <image>
       <url>https://www.gravatar.com/avatar/9a30667a06f9e54b4502c81e69456aa3</url>
-      <title>CJli&#39;s blog</title>
+      <title>yuuki&#39;s blog</title>
       <link>https://cjliblog.top/</link>
     </image>
     
     <atom:link href="https://cjliblog.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
-    <description>凡事皆有可能</description>
+    <description>新的开始</description>
     <pubDate>Sun, 13 Aug 2023 03:25:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
