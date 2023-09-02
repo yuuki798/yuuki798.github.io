@@ -3,18 +3,18 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>cj_li&#39;s blog</title>
+    <title>绝剑阁</title>
     <link>https://cjliblog.top/</link>
     
     <image>
       <url>https://www.gravatar.com/avatar/9a30667a06f9e54b4502c81e69456aa3</url>
-      <title>cj_li&#39;s blog</title>
+      <title>绝剑阁</title>
       <link>https://cjliblog.top/</link>
     </image>
     
     <atom:link href="https://cjliblog.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
-    <description>新的开始</description>
+    <description>我是description</description>
     <pubDate>Sat, 02 Sep 2023 14:23:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
