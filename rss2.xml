@@ -15,11 +15,11 @@
     <atom:link href="https://cjliblog.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>银屏之下，龙游四海。</description>
-    <pubDate>Sat, 02 Sep 2023 15:01:02 GMT</pubDate>
+    <pubDate>Fri, 08 Sep 2023 09:48:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>CTF web题集</title>
+      <title>CTF web集</title>
       <link>https://cjliblog.top/2023/08/31/CTF%20web%E9%9A%BE%E9%A2%98%E6%94%B6%E9%9B%86/</link>
       <guid>https://cjliblog.top/2023/08/31/CTF%20web%E9%9A%BE%E9%A2%98%E6%94%B6%E9%9B%86/</guid>
       <pubDate>Wed, 30 Aug 2023 16:00:00 GMT</pubDate>
@@ -28,7 +28,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><strong>这里的主人很懒，P话都没有写[doge]</strong></p>]]></content:encoded>
+      <content:encoded><![CDATA[<ol><li><a href="https://uuzdaisuki.com/2020/07/15/%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5%E7%BB%95%E8%BF%87%E6%96%B9%E5%BC%8F%E6%80%BB%E7%BB%93/">命令注入</a></li></ol><p>来自<a href="https://uuzdaisuki.com/"> <strong>Leticia’s Blog</strong> </a></p><ol start="2"><li><p>常见的备份文件后缀名有 .git .<a href="https://so.csdn.net/so/search?q=svn&spm=1001.2101.3001.7020">svn</a> .swp .~ .bak .bash_history</p></li><li><p>ffifdyop经过md5和from hex转化之后会生成’or’6开头的字符串</p></li><li><p>两个md5哈希可以0e开头若相等</p></li><li><p>两个md5强相等条件可以用数列绕过去</p></li><li></li></ol><h2 id="buuoj好题名单"><a href="#buuoj好题名单" class="headerlink" title="buuoj好题名单"></a>buuoj好题名单</h2><p>1.[GXYCTF2019]Ping Ping Ping</p><p>推荐理由：命令注入</p><p>建议：</p><p>   1.尝试base64绕过和拼接绕过</p><p>   2.chrome开头加上”view-source:“，可以看全源码（相当于ctrl+u）</p><p>2.[强网杯 2019]随便注 1</p><p>推荐理由：sql注入</p><p>建议：看攻略 <a href="https://zhuanlan.zhihu.com/p/545713669">https://zhuanlan.zhihu.com/p/545713669</a></p><p>3.【RoarCTF 2019】Easy Calc 1</p><p>推荐理由：解释到位</p><p>建议：看攻略<a href="https://www.dccomics.top/2021/11/11/%E3%80%90RoarCTF%202019%E3%80%91Easy%20Calc%201/">https://www.dccomics.top/2021/11/11/%E3%80%90RoarCTF%202019%E3%80%91Easy%20Calc%201/</a></p>]]></content:encoded>
       
       
       
@@ -120,27 +120,6 @@
       
       
       <comments>https://cjliblog.top/2023/08/13/NC16593%E9%93%BA%E5%9C%B0%E6%AF%AF/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>NC16589机器翻译【题解】【入门向】</title>
-      <link>https://cjliblog.top/2023/08/05/NC16589%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91/</link>
-      <guid>https://cjliblog.top/2023/08/05/NC16589%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91/</guid>
-      <pubDate>Fri, 04 Aug 2023 16:00:00 GMT</pubDate>
-      
-      <description>大家好，我是description</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>题目来源：<a href="https://ac.nowcoder.com/acm/problem/16589">机器翻译</a></p><p><code>hello</code></p><p>首先明确需求：</p><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//一个内存，输入，存储查字典次数的变量</span></span><br><span class="line">vector&lt;<span class="type">int</span>&gt;a;<span class="comment">//内存容器</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    cin&gt;&gt;b[i];<span class="comment">//输入</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> ans=<span class="number">0</span>;<span class="comment">//存储查字典次数的变量</span></span><br></pre></td></tr></table></figure><p>在循环内，我们需要知道是否内存内有和输入重复的元素：</p><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> it=a.<span class="built_in">begin</span>();it!=a.<span class="built_in">end</span>();it++) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(*it==b[i]) flag=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>如果没有重复，我会push进一个输入：</p><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(flag) </span><br><span class="line">&#123;</span><br><span class="line">    a.<span class="built_in">push_back</span>(b[i]);ans++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>另外，如果内存达到上限，我会把内存第一个元素删掉：</p><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(a.<span class="built_in">size</span>()==m+<span class="number">1</span>) a.<span class="built_in">erase</span>(a.<span class="built_in">begin</span>());</span><br></pre></td></tr></table></figure><p>就OK辽！</p><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//一个内存，输入，存储查字典次数的变量</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt;a;</span><br><span class="line">    <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> m,n;</span><br><span class="line">    cin&gt;&gt;m&gt;&gt;n;</span><br><span class="line">    <span class="type">int</span> b[<span class="number">10000</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">bool</span> flag=<span class="number">1</span>;</span><br><span class="line">        cin&gt;&gt;b[i];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> it=a.<span class="built_in">begin</span>();it!=a.<span class="built_in">end</span>();it++) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(*it==b[i]) flag=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(flag) </span><br><span class="line">        &#123;</span><br><span class="line">            a.<span class="built_in">push_back</span>(b[i]);ans++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(a.<span class="built_in">size</span>()==m+<span class="number">1</span>) a.<span class="built_in">erase</span>(a.<span class="built_in">begin</span>());</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/.top//11953\desktop\hahahaha.jpg" alt="hahahaha"></p>]]></content:encoded>
-      
-      
-      
-      <category domain="https://cjliblog.top/tags/%E7%89%9B%E5%AE%A2%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E7%B2%BE%E9%80%89/">牛客算法基础精选</category>
-      
-      
-      <comments>https://cjliblog.top/2023/08/05/NC16589%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91/#disqus_thread</comments>
       
     </item>
     
