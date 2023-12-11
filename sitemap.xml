@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjliblog.top/2023/12/10/%E5%B0%8F%E6%80%9D%E8%80%83/</loc>
+    
+    <lastmod>2023-12-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://cjliblog.top/2023/12/11/%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AAlatex-markdown%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%BD%AC%E5%8C%96%E5%99%A8/</loc>
     
     <lastmod>2023-12-11</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://cjliblog.top/2023/12/11/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E2%80%94%E2%80%94fate/</loc>
-    
-    <lastmod>2023-12-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cjliblog.top/2023/12/10/%E5%B0%8F%E6%80%9D%E8%80%83/</loc>
     
     <lastmod>2023-12-11</lastmod>
     
@@ -240,6 +240,13 @@
   
   <url>
     <loc>https://cjliblog.top/categories/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2023-12-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cjliblog.top/categories/%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2023-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
