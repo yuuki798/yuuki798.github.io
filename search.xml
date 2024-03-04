@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2024/03/04/%E4%B8%89%E6%9C%88%E7%AC%94%E8%AE%B0/"/>
+      <url>/2024/03/04/%E4%B8%89%E6%9C%88%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="力扣"><a href="#力扣" class="headerlink" title="力扣"></a>力扣</h1><h2 id="58-最后一个单词的长度"><a href="#58-最后一个单词的长度" class="headerlink" title="58. 最后一个单词的长度"></a>58. 最后一个单词的长度</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">lengthOfLastWord</span><span class="params">(String s)</span> &#123;</span><br><span class="line">        <span class="comment">// String[] words=s.split(&quot; &quot;);</span></span><br><span class="line">        <span class="comment">// return words[words.length-1].length();</span></span><br><span class="line">        String res=<span class="string">&quot;&quot;</span>;</span><br><span class="line">        ArrayList&lt;String&gt; words=<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;String&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;s.length();i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(s.charAt(i)==<span class="string">&#x27; &#x27;</span>&amp;&amp;res!=<span class="string">&quot;&quot;</span>)&#123;</span><br><span class="line">                words.add(res);</span><br><span class="line">                res=<span class="string">&quot;&quot;</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(s.charAt(i)!=<span class="string">&#x27; &#x27;</span>)&#123;</span><br><span class="line">                res=res+s.charAt(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (!res.equals(<span class="string">&quot;&quot;</span>)) &#123;</span><br><span class="line">            words.add(res); <span class="comment">// 处理字符串末尾的单词</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> words.get(words.size()-<span class="number">1</span>).length();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于go+gin+gorm+mysql实现的CRUD项目（更新ing）</title>
       <link href="/2023/12/13/%E5%9F%BA%E4%BA%8Ego+gin+gorm+mysql%E5%AE%9E%E7%8E%B0%E7%9A%84CRUD%E9%A1%B9%E7%9B%AE%EF%BC%88%E6%9B%B4%E6%96%B0ing%EF%BC%89/"/>
       <url>/2023/12/13/%E5%9F%BA%E4%BA%8Ego+gin+gorm+mysql%E5%AE%9E%E7%8E%B0%E7%9A%84CRUD%E9%A1%B9%E7%9B%AE%EF%BC%88%E6%9B%B4%E6%96%B0ing%EF%BC%89/</url>
