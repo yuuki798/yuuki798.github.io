@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjliblog.top/2024/04/12/Error%20java%20%E9%94%99%E8%AF%AF%20%E4%B8%8D%E6%94%AF%E6%8C%81%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC5%20/</loc>
+    
+    <lastmod>2024-04-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://cjliblog.top/2024/04/12/%E8%A7%A3%E5%86%B3conda%E5%A4%AA%E6%85%A2%E7%9A%84%E6%96%B9%E6%A1%88/</loc>
     
     <lastmod>2024-04-12</lastmod>
@@ -290,6 +299,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://cjliblog.top/tags/java/</loc>
+    <lastmod>2024-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -322,6 +338,13 @@
   
   <url>
     <loc>https://cjliblog.top/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2024-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cjliblog.top/categories/java/</loc>
     <lastmod>2024-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

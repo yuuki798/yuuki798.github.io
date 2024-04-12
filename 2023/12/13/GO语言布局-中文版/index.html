@@ -1,0 +1,525 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Go项目标准布局 | 绝剑阁</title><meta name="author" content="yuuki,1195396626@qq.com"><meta name="copyright" content="yuuki"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="大家好，我是description">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Go项目标准布局">
+<meta property="og:url" content="https://cjliblog.top/2023/12/13/GO%E8%AF%AD%E8%A8%80%E5%B8%83%E5%B1%80-%E4%B8%AD%E6%96%87%E7%89%88/index.html">
+<meta property="og:site_name" content="绝剑阁">
+<meta property="og:description" content="大家好，我是description">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://w.wallhaven.cc/full/ex/wallhaven-ex9gwo.png">
+<meta property="article:published_time" content="2023-12-12T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-12-13T12:40:51.729Z">
+<meta property="article:author" content="yuuki">
+<meta property="article:tag" content="我是keywords">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://w.wallhaven.cc/full/ex/wallhaven-ex9gwo.png"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://cjliblog.top/2023/12/13/GO%E8%AF%AD%E8%A8%80%E5%B8%83%E5%B1%80-%E4%B8%AD%E6%96%87%E7%89%88/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: yuuki","link":"链接: ","source":"来源: 绝剑阁","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Go项目标准布局',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-12-13 20:40:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/rss2.xml" title="绝剑阁" type="application/rss+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (true) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/img1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('https://w.wallhaven.cc/full/ex/wallhaven-ex9gwo.png')"><nav id="nav"><span id="blog-info"><a href="/" title="绝剑阁"><img class="site-icon" src="/img/cjlogo.png"/><span class="site-name">绝剑阁</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Go项目标准布局</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-12T16:00:00.000Z" title="发表于 2023-12-13 00:00:00">2023-12-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-13T12:40:51.729Z" title="更新于 2023-12-13 20:40:51">2023-12-13</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/go/">go</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Go项目标准布局"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Go项目标准布局"><a href="#Go项目标准布局" class="headerlink" title="Go项目标准布局"></a>Go项目标准布局</h1><ul>
+<li><a href="README.md">English</a></li>
+<li><a href="README_ko.md">한국어 문서</a></li>
+<li><a href="README_zh.md">简体中文</a></li>
+<li><a href="README_zh-TW.md">正體中文</a></li>
+<li><a href="README_zh-CN.md">简体中文</a> - ???</li>
+<li><a href="README_fr.md">Français</a></li>
+<li><a href="README_ja.md">日本語</a></li>
+<li><a href="README_ptBR.md">Portuguese</a></li>
+<li><a href="README_es.md">Español</a></li>
+<li><a href="README_ro.md">Română</a></li>
+<li><a href="README_ru.md">Русский</a></li>
+<li><a href="README_tr.md">Türkçe</a></li>
+<li><a href="README_it.md">Italiano</a></li>
+<li><a href="README_vi.md">Vietnamese</a></li>
+<li><a href="README_ua.md">Українська</a></li>
+<li><a href="README_id.md">Indonesian</a></li>
+</ul>
+<p>这是Go应用程序项目的基础布局。这不是Go核心开发团队定义的官方标准；无论是在经典项目还是在新兴的项目中，这都是Go生态系统中一组常见的项目布局模式。这其中有一些模式比另外的一些更受欢迎。它通过几个支撑目录为任何足够大规模的实际应用程序提供一些增强功能。</p>
+<p>如果你正准备学习Go、正在构建PoC项目或编写玩具项目，那么按照这个项目进行布局就大材小用了。从一些真正简单的事情开始（一个<code>main.go</code>文件就足够了）。随着项目的增长，确保代码结构的合理是非常重要的，否则最终会出现很多隐藏的依赖关系和全局状态而导致这个项目的代码混乱。当一个项目多人同时进行时，就更需要有清晰的结构，此时引入一种通用的项目包&#x2F;标准库管理工具就显得尤为重要。当你维护一个开源项目或者有其他项目导入了你的代码，那么有一个私有的包（如<code>internal</code>）就很重要了。克隆这个项目，保留你项目中需要的部分，并删除其他部分。通常来说不需要也没必要使用这个项目中的全部内容。因为，从来没有在一个单一的项目中使用本项目中定义的全部模式，甚至如<code>vendor</code>模式。</p>
+<p>Go 1.14 <code>Go Modules</code>已经可以用于生产环境。没有什么特殊原因的话，请使用<code>Go Modules</code>，使用它之后，你就再也不用担心<code>$GOPATH</code>的配置和项目实际的存放位置，项目想放在哪里就放在哪里。本项目中<code>go.mod</code>文件的内容假设你的项目是托管在GitHub上的，当然这不是必选项，因为<code>Module</code>中的路径可以是任意的值，一般<code>Module</code>路径的第一部分中应该包含一个点（最新版的Go中不再强制要求这一点，如果使用的是稍微旧一些的版本，那么可能遇到编译失败的问题）。了解更多请看Issues <a target="_blank" rel="noopener" href="https://github.com/golang/go/issues/37554">37554</a>和 <a target="_blank" rel="noopener" href="https://github.com/golang/go/issues/32819">32819</a>。</p>
+<p>本项目布局有意设计的更通用一些，而不会尝试去引入一些特定的Go包结构。</p>
+<p>这是社区共同的努力。如果发现了一种新的模式或者项目中已经存在的某些模式需要更新，请新建一个issue。</p>
+<p>如果需要一些关于命名、格式化或者样式方面的帮助，请先运行<a target="_blank" rel="noopener" href="https://golang.org/cmd/gofmt/"><code>gofmt</code></a>和<a target="_blank" rel="noopener" href="https://github.com/golang/lint"><code>golint</code></a>。另外，请务必阅读以下Go代码样式指南和建议：</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://talks.golang.org/2014/names.slide">https://talks.golang.org/2014/names.slide</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://golang.org/doc/effective_go.html#names">https://golang.org/doc/effective_go.html#names</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.golang.org/package-names">https://blog.golang.org/package-names</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/golang/go/wiki/CodeReviewComments">https://github.com/golang/go/wiki/CodeReviewComments</a></p>
+</li>
+<li><p>Style guideline for Go packages (rakyll&#x2F;JBD)</p>
+</li>
+</ul>
+<p>更多背景信息请查看<a target="_blank" rel="noopener" href="https://medium.com/golang-learn/go-project-layout-e5213cdcfaa2"><code>Go Project Layout</code></a>。</p>
+<p>有关命名和项目包组织样式以及其他代码结构的更多推荐文章：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=PTE4VJIdHPg">GopherCon EU 2018: Peter Bourgon - Best Practices for Industrial Programming</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=MzTcsI6tn-0">GopherCon Russia 2018: Ashley McNamara + Brian Ketelsen - Go best practices</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ltqV6pDKZD8">GopherCon 2017: Edward Muller - Go Anti-Patterns</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=oL6JBUk6tj0">GopherCon 2018: Kat Zien - How Do You Structure Your Go Apps</a></li>
+</ul>
+<h2 id="Go目录"><a href="#Go目录" class="headerlink" title="Go目录"></a>Go目录</h2><h3 id="cmd"><a href="#cmd" class="headerlink" title="/cmd"></a><code>/cmd</code></h3><p>项目主要的应用程序。</p>
+<p>对于每个应用程序来说这个目录的名字应该和项目可执行文件的名字相匹配（例如，<code>/cmd/myapp</code>）。</p>
+<p>不要在这个目录中放太多的代码。如果目录中的代码可以被其他项目导入并使用，那么应该把他们放在<code>/pkg</code>目录。如果目录中的代码不可重用，或者不希望被他人使用，应该将代码放在<code>/internal</code>目录。显式地表明意图比较好！</p>
+<p>通常来说，项目都应该拥有一个小的<code>main</code>函数，并在<code>main</code>函数中导入或者调用<code>/internal</code>和<code>/pkg</code>目录中的代码。</p>
+<p>更多详情，请看<a target="_blank" rel="noopener" href="https://github.com/golang-standards/project-layout/blob/master/cmd/README.md"><code>/cmd</code></a>目录中的例子。</p>
+<h3 id="internal"><a href="#internal" class="headerlink" title="/internal"></a><code>/internal</code></h3><p>私有的应用程序代码库。这些是不希望被其他人导入的代码。请注意：这种模式是Go编译器强制执行的。详细内容情况Go 1.4的<a target="_blank" rel="noopener" href="https://golang.org/doc/go1.4#internalpackages">release notes</a>。再次注意，在项目的目录树中的任意位置都可以有<code>internal</code>目录，而不仅仅是在顶级目录中。</p>
+<p>可以在内部代码包中添加一些额外的结构，来分隔共享和非共享的内部代码。这不是必选项（尤其是在小项目中），但是有一个直观的包用途是很棒的。应用程序实际的代码可以放在<code>/internal/app</code>目录（如，<code>internal/app/myapp</code>），而应用程序的共享代码放在<code>/internal/pkg</code>目录（如，<code>internal/pkg/myprivlib</code>）中。</p>
+<h3 id="pkg"><a href="#pkg" class="headerlink" title="/pkg"></a><code>/pkg</code></h3><p>外部应用程序可以使用的库代码（如，<code>/pkg/mypubliclib</code>）。其他项目将会导入这些库来保证项目可以正常运行，所以在将代码放在这里前，一定要三思而行。请注意，<code>internal</code>目录是一个更好的选择来确保项目私有代码不会被其他人导入，因为这是Go强制执行的。使用<code>/pkg</code>目录来明确表示代码可以被其他人安全的导入仍然是一个好方式。Travis Jeffery撰写的关于 <a target="_blank" rel="noopener" href="https://travisjeffery.com/b/2019/11/i-ll-take-pkg-over-internal/">I’ll take pkg over internal</a> 文章很好地概述了<code>pkg</code>和<code>inernal</code>目录以及何时使用它们。</p>
+<p>当您的根目录包含大量非Go组件和目录时，这也是一种将Go代码分组到一个位置的方法，从而使运行各种Go工具更加容易（在如下的文章中都有提到：2018年GopherCon <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=PTE4VJIdHPg">Best Practices for Industrial Programming</a>，<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=oL6JBUk6tj0">Kat Zien - How Do You Structure Your Go Apps</a> ，Golab 2018 <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=3gQa1LWwuzk">Massimiliano Pippi - Project layout patterns in Go</a>）。</p>
+<p>点击查看<code>/pkg</code>就能看到那些使用这个布局模式的流行Go代码仓库。这是一种常见的布局模式，但未被普遍接受，并且Go社区中的某些人不推荐这样做。</p>
+<p>如果项目确实很小并且嵌套的层次并不会带来多少价值（除非你就是想用它），那么就不要使用它。请仔细思考这种情况，当项目变得很大，并且根目录中包含的内容相当繁杂（尤其是有很多非Go的组件）。</p>
+<h3 id="vendor"><a href="#vendor" class="headerlink" title="/vendor"></a><code>/vendor</code></h3><p>应用程序的依赖关系（通过手动或者使用喜欢的依赖管理工具，如新增的内置<a target="_blank" rel="noopener" href="https://github.com/golang/go/wiki/Modules">Go Modules</a>特性）。执行<code>go mod vendor</code>命令将会在项目中创建<code>/vendor</code>目录，注意，如果使用的不是Go 1.14版本，在执行<code>go build</code>进行编译时，需要添加<code>-mod=vendor</code>命令行选项，因为它不是默认选项。</p>
+<p>构建库文件时，不要提交应用程序依赖项。</p>
+<p>请注意，从<a target="_blank" rel="noopener" href="https://golang.org/doc/go1.13#modules">1.13</a>开始，Go也启动了模块代理特性（使用<code>https：//proxy.golang.org</code>作为默认的模块代理服务器）。点击<a target="_blank" rel="noopener" href="https://blog.golang.org/module-mirror-launch">这里</a>阅读有关它的更多信息，来了解它是否符合所需要求和约束。如果<code>Go Module</code>满足需要，那么就不需要<code>vendor</code>目录。</p>
+<h2 id="服务端应用程序的目录"><a href="#服务端应用程序的目录" class="headerlink" title="服务端应用程序的目录"></a>服务端应用程序的目录</h2><h3 id="api"><a href="#api" class="headerlink" title="/api"></a><code>/api</code></h3><p>OpenAPI&#x2F;Swagger规范，JSON模式文件，协议定义文件。</p>
+<p>更多样例查看<a target="_blank" rel="noopener" href="https://github.com/golang-standards/project-layout/blob/master/api/README.md"><code>/api</code></a>目录。</p>
+<h2 id="Web应用程序的目录"><a href="#Web应用程序的目录" class="headerlink" title="Web应用程序的目录"></a>Web应用程序的目录</h2><h3 id="web"><a href="#web" class="headerlink" title="/web"></a><code>/web</code></h3><p>Web应用程序特定的组件：静态Web资源，服务器端模板和单页应用（Single-Page App，SPA）。</p>
+<h2 id="通用应用程序的目录"><a href="#通用应用程序的目录" class="headerlink" title="通用应用程序的目录"></a>通用应用程序的目录</h2><h3 id="configs"><a href="#configs" class="headerlink" title="/configs"></a><code>/configs</code></h3><p>配置文件模板或默认配置。</p>
+<p>将<code>confd</code>或者<code>consul-template</code>文件放在这里。</p>
+<h3 id="init"><a href="#init" class="headerlink" title="/init"></a><code>/init</code></h3><p>系统初始化（systemd、upstart、sysv）和进程管理（runit、supervisord）配置。</p>
+<h3 id="scripts"><a href="#scripts" class="headerlink" title="/scripts"></a><code>/scripts</code></h3><p>用于执行各种构建，安装，分析等操作的脚本。</p>
+<p>这些脚本使根级别的Makefile变得更小更简单（例如<a target="_blank" rel="noopener" href="https://github.com/hashicorp/terraform/blob/main/Makefile">https://github.com/hashicorp/terraform/blob/main/Makefile</a>）。</p>
+<p>更多样例查看<a target="_blank" rel="noopener" href="https://github.com/golang-standards/project-layout/blob/master/scripts/README.md"><code>/scripts</code></a>。</p>
+<h3 id="build"><a href="#build" class="headerlink" title="/build"></a><code>/build</code></h3><p>打包和持续集成。</p>
+<p>将云（AMI），容器（Docker），操作系统（deb，rpm，pkg）软件包配置和脚本放在<code>/build/package</code>目录中。</p>
+<p>将CI（travis、circle、drone）配置文件和就脚本放在<code>build/ci</code>目录中。请注意，有一些CI工具（如，travis CI）对于配置文件的位置有严格的要求。尝试将配置文件放在<code>/build/ci</code>目录，然后链接到CI工具想要的位置。</p>
+<h3 id="deployments"><a href="#deployments" class="headerlink" title="/deployments"></a><code>/deployments</code></h3><p>IaaS，PaaS，系统和容器编排部署配置和模板（docker-compose，kubernetes&#x2F;helm，mesos，terraform，bosh）。请注意，在某些存储库中（尤其是使用kubernetes部署的应用程序），该目录的名字是<code>/deploy</code>。</p>
+<h3 id="test"><a href="#test" class="headerlink" title="/test"></a><code>/test</code></h3><p>外部测试应用程序和测试数据。随时根据需要构建<code>/test</code>目录。对于较大的项目，有一个数据子目录更好一些。例如，如果需要Go忽略目录中的内容，则可以使用<code>/test/data</code>或<code>/test/testdata</code>这样的目录名字。请注意，Go还将忽略以“<code>.</code>”或“<code>_</code>”开头的目录或文件，因此可以更具灵活性的来命名测试数据目录。</p>
+<p>更多样例查看<a target="_blank" rel="noopener" href="https://github.com/golang-standards/project-layout/blob/master/test/README.md"><code>/test</code></a>。</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="docs"><a href="#docs" class="headerlink" title="/docs"></a><code>/docs</code></h3><p>设计和用户文档（除了godoc生成的文档）。</p>
+<p>更多样例查看<a target="_blank" rel="noopener" href="https://github.com/golang-standards/project-layout/blob/master/docs/README.md"><code>/docs</code></a>。</p>
+<h3 id="tools"><a href="#tools" class="headerlink" title="/tools"></a><code>/tools</code></h3><p>此项目的支持工具。请注意，这些工具可以从<code>/pkg</code>和<code>/internal</code>目录导入代码。</p>
+<p>更多样例查看<a target="_blank" rel="noopener" href="https://github.com/golang-standards/project-layout/blob/master/tools/README.md"><code>/tools</code></a>。</p>
+<h3 id="examples"><a href="#examples" class="headerlink" title="/examples"></a><code>/examples</code></h3><p>应用程序或公共库的示例。</p>
+<p>更多样例查看<a target="_blank" rel="noopener" href="https://github.com/golang-standards/project-layout/blob/master/examples/README.md"><code>/examples</code></a>。</p>
+<h3 id="third-party"><a href="#third-party" class="headerlink" title="/third_party"></a><code>/third_party</code></h3><p>外部辅助工具，fork的代码和其他第三方工具（例如Swagger UI）。</p>
+<h3 id="githooks"><a href="#githooks" class="headerlink" title="/githooks"></a><code>/githooks</code></h3><p>Git的钩子。</p>
+<h3 id="assets"><a href="#assets" class="headerlink" title="/assets"></a><code>/assets</code></h3><p>项目中使用的其他资源（图像，Logo等）。</p>
+<h3 id="website"><a href="#website" class="headerlink" title="/website"></a><code>/website</code></h3><p>如果不使用Github pages，则在这里放置项目的网站数据。</p>
+<p>更多样例查看<a target="_blank" rel="noopener" href="https://github.com/golang-standards/project-layout/blob/master/website/README.md"><code>/website</code></a>。</p>
+<h2 id="不应该出现的目录"><a href="#不应该出现的目录" class="headerlink" title="不应该出现的目录"></a>不应该出现的目录</h2><h3 id="src"><a href="#src" class="headerlink" title="/src"></a><code>/src</code></h3><p>有一些Go项目确实包含<code>src</code>文件夹，但通常只有在开发者是从Java（这是Java中一个通用的模式）转过来的情况下才会有。如果可以的话请不要使用这种Java模式。你肯定不希望你的Go代码和项目看起来像Java。</p>
+<p>不要将项目级别的<code>/src</code>目录与Go用于其工作空间的<code>/src</code>目录混淆，就像<a target="_blank" rel="noopener" href="https://golang.org/doc/code.html">How to Write Go Code</a>中描述的那样。<code>$GOPATH</code>环境变量指向当前的工作空间（默认情况下指向非Windows系统中的<code>$HOME/go</code>）。此工作空间包括顶级<code>/pkg</code>，<code>/bin</code>和<code>/src</code>目录。实际的项目最终变成<code>/src</code>下的子目录，因此，如果项目中有<code>/src</code>目录，则项目路径将会变成：<code>/some/path/to/workspace/src/your_project/src/your_code.go</code>。请注意，使用Go 1.11，可以将项目放在GOPATH之外，但这并不意味着使用此布局模式是个好主意。</p>
+<h2 id="徽章"><a href="#徽章" class="headerlink" title="徽章"></a>徽章</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://goreportcard.com/">Go Report Card</a>：它将使用<code>gofmt</code>，<code>vet</code>，<code>gocyclo</code>，<code>golint</code>，<code>ineffassign</code>，<code>license</code>和<code>mispell</code>扫描项目中的代码。将<code>github.com/golang-standards/project-layout</code>替换为你的项目的引用。</li>
+<li><a target="_blank" rel="noopener" href="http://godoc.org/">GoDoc</a>：它将提供GoDoc生成的文档的在线版本。更改链接以指向你的项目。</li>
+<li>Release：它将显示你项目的最新版本号。更改github链接以指向你的项目。</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://goreportcard.com/report/github.com/golang-standards/project-layout"><img src="https://goreportcard.com/badge/github.com/golang-standards/project-layout?style=flat-square" alt="Go Report Card"></a><br><a target="_blank" rel="noopener" href="http://godoc.org/github.com/golang-standards/project-layout"><img src="https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square" alt="Go Doc"></a><br><a target="_blank" rel="noopener" href="https://github.com/golang-standards/project-layout/releases/latest"><img src="https://img.shields.io/github/release/golang-standards/project-layout.svg?style=flat-square" alt="Release"></a></p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>WIP项目是一个自以为是的项目模板其中带有<code>sample/reusable</code>配置、脚本和代码。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://cjliblog.top">yuuki</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://cjliblog.top/2023/12/13/GO%E8%AF%AD%E8%A8%80%E5%B8%83%E5%B1%80-%E4%B8%AD%E6%96%87%E7%89%88/">https://cjliblog.top/2023/12/13/GO%E8%AF%AD%E8%A8%80%E5%B8%83%E5%B1%80-%E4%B8%AD%E6%96%87%E7%89%88/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://cjliblog.top" target="_blank">绝剑阁</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://w.wallhaven.cc/full/ex/wallhaven-ex9gwo.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/03/04/%E4%B8%89%E6%9C%88%E7%AC%94%E8%AE%B0/" title="三月日记"><img class="cover" src="/img/img3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">三月日记</div></div></a></div><div class="next-post pull-right"><a href="/2023/12/13/go%E7%9A%84%E5%85%A5%E9%97%A8/" title="go的入门"><img class="cover" src="https://w.wallhaven.cc/full/ex/wallhaven-ex9gwo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">go的入门</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/img1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">yuuki</div><div class="author-info__description">银屏之下，龙游四海。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Li-can-cheng"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Li-can-cheng" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:1195396626@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">评论系统已经换成gitalk啦！快来发几条！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Go%E9%A1%B9%E7%9B%AE%E6%A0%87%E5%87%86%E5%B8%83%E5%B1%80"><span class="toc-number">1.</span> <span class="toc-text">Go项目标准布局</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Go%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.</span> <span class="toc-text">Go目录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cmd"><span class="toc-number">1.1.1.</span> <span class="toc-text">&#x2F;cmd</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#internal"><span class="toc-number">1.1.2.</span> <span class="toc-text">&#x2F;internal</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pkg"><span class="toc-number">1.1.3.</span> <span class="toc-text">&#x2F;pkg</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vendor"><span class="toc-number">1.1.4.</span> <span class="toc-text">&#x2F;vendor</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="toc-number">1.2.</span> <span class="toc-text">服务端应用程序的目录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#api"><span class="toc-number">1.2.1.</span> <span class="toc-text">&#x2F;api</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Web%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="toc-number">1.3.</span> <span class="toc-text">Web应用程序的目录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#web"><span class="toc-number">1.3.1.</span> <span class="toc-text">&#x2F;web</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E7%94%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.</span> <span class="toc-text">通用应用程序的目录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#configs"><span class="toc-number">1.4.1.</span> <span class="toc-text">&#x2F;configs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#init"><span class="toc-number">1.4.2.</span> <span class="toc-text">&#x2F;init</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scripts"><span class="toc-number">1.4.3.</span> <span class="toc-text">&#x2F;scripts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#build"><span class="toc-number">1.4.4.</span> <span class="toc-text">&#x2F;build</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deployments"><span class="toc-number">1.4.5.</span> <span class="toc-text">&#x2F;deployments</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#test"><span class="toc-number">1.4.6.</span> <span class="toc-text">&#x2F;test</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">1.5.</span> <span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#docs"><span class="toc-number">1.5.1.</span> <span class="toc-text">&#x2F;docs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tools"><span class="toc-number">1.5.2.</span> <span class="toc-text">&#x2F;tools</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#examples"><span class="toc-number">1.5.3.</span> <span class="toc-text">&#x2F;examples</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#third-party"><span class="toc-number">1.5.4.</span> <span class="toc-text">&#x2F;third_party</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#githooks"><span class="toc-number">1.5.5.</span> <span class="toc-text">&#x2F;githooks</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#assets"><span class="toc-number">1.5.6.</span> <span class="toc-text">&#x2F;assets</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#website"><span class="toc-number">1.5.7.</span> <span class="toc-text">&#x2F;website</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E5%BA%94%E8%AF%A5%E5%87%BA%E7%8E%B0%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="toc-number">1.6.</span> <span class="toc-text">不应该出现的目录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#src"><span class="toc-number">1.6.1.</span> <span class="toc-text">&#x2F;src</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%BD%E7%AB%A0"><span class="toc-number">1.7.</span> <span class="toc-text">徽章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-number">1.8.</span> <span class="toc-text">注意</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/12/%E8%A7%A3%E5%86%B3conda%E5%A4%AA%E6%85%A2%E7%9A%84%E6%96%B9%E6%A1%88/" title="解决conda太慢的方案">解决conda太慢的方案</a><time datetime="2024-04-11T16:00:00.000Z" title="发表于 2024-04-12 00:00:00">2024-04-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/12/Error%20java%20%E9%94%99%E8%AF%AF%20%E4%B8%8D%E6%94%AF%E6%8C%81%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC5%20/" title="Error java 错误 不支持发行版本5">Error java 错误 不支持发行版本5</a><time datetime="2024-04-11T16:00:00.000Z" title="发表于 2024-04-12 00:00:00">2024-04-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/04/%E4%B8%89%E6%9C%88%E7%AC%94%E8%AE%B0/" title="三月日记">三月日记</a><time datetime="2024-03-04T08:18:13.471Z" title="发表于 2024-03-04 16:18:13">2024-03-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/13/GO%E8%AF%AD%E8%A8%80%E5%B8%83%E5%B1%80-%E4%B8%AD%E6%96%87%E7%89%88/" title="Go项目标准布局">Go项目标准布局</a><time datetime="2023-12-12T16:00:00.000Z" title="发表于 2023-12-13 00:00:00">2023-12-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/13/go%E7%9A%84%E5%85%A5%E9%97%A8/" title="go的入门">go的入门</a><time datetime="2023-12-12T16:00:00.000Z" title="发表于 2023-12-13 00:00:00">2023-12-13</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://w.wallhaven.cc/full/ex/wallhaven-ex9gwo.png')"><div id="footer-wrap"><div class="copyright">&copy;2023-07 - 2024 By yuuki</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">绝剑出鞘，网海风流云涌。</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'neutral'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addModeChange('mermaid', runMermaid)
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: 'cb182789347f95bdba3e',
+      clientSecret: '325058c941cb2325c56c2b52885ed923406d597d',
+      repo: 'Li-can-cheng.github.io',
+      owner: 'Li-can-cheng',
+      admin: ['Li-can-cheng'],
+      id: '1c15513854bd2a9c01448e829b188cb4',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.textContent= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const findTrueUrl = (array) => {
+    Promise.all(array.map(item =>
+      fetch(item.url).then(resp => resp.json()).then(data => {
+        const urlArray = data.body.match(/(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?/ig)
+        if (data.user.login === 'utterances-bot') {
+          return urlArray.pop()
+        } else {
+          return urlArray.shift()
+        }
+      })
+    )).then(res => {
+        array = array.map((i,index)=> {
+          return {
+            ...i,
+            url: res[index]
+          }
+        })
+
+        saveToLocal.set('github-newest-comments', JSON.stringify(array), 10/(60*24))
+        generateHtml(array)
+    });
+  }
+
+  const getComment = () => {
+    fetch('https://api.github.com/repos/Li-can-cheng/Li-can-cheng.github.io/issues/comments?sort=updated&direction=desc&per_page=6&page=1',{
+      "headers": {
+        Accept: 'application/vnd.github.v3.html+json'
+      }
+    })
+      .then(response => response.json())
+      .then(data => {
+        const githubArray = data.map(item => {
+          return {
+            'avatar': item.user.avatar_url,
+            'content': changeContent(item.body_html),
+            'nick': item.user.login,
+            'url': item.issue_url,
+            'date': item.updated_at,
+            'githubUrl': item.html_url
+          }
+        })
+        findTrueUrl(githubArray)
+      }).catch(e => {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
+        }
+
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('github-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
