@@ -15,7 +15,7 @@
     <atom:link href="https://cjliblog.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>银屏之下，龙游四海。</description>
-    <pubDate>Sun, 09 Jun 2024 03:32:15 GMT</pubDate>
+    <pubDate>Sun, 09 Jun 2024 03:37:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -27,13 +27,12 @@
         
         
       <description>&lt;p&gt;如图：&lt;/p&gt;
-&lt;p&gt;[&lt;img src=&quot;/.top//img%5C%E5%A4%A7%E6%B3%A8%E9%87%8A%E5%AE%9E%E6%97%B6%E6%A8%A1%E7%89%88.jpg&quot; alt=&quot;大注释实时模版&quot;&gt;]&lt;/p&gt;
-</description>
+&lt;p&gt;[&lt;img src=&quot;https://raw.githubusercontent.com/Li-can-cheng/Li-can-cheng.github.io/main/img/%E5%A4%A7%E6%B3%A8%E9%87%8A%E5%AE%9E</description>
         
       
       
       
-      <content:encoded><![CDATA[<p>如图：</p><p>[<img src="/.top//img%5C%E5%A4%A7%E6%B3%A8%E9%87%8A%E5%AE%9E%E6%97%B6%E6%A8%A1%E7%89%88.jpg" alt="大注释实时模版">]</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>如图：</p><p>[<img src="https://raw.githubusercontent.com/Li-can-cheng/Li-can-cheng.github.io/main/img/%E5%A4%A7%E6%B3%A8%E9%87%8A%E5%AE%9E%E6%97%B6%E6%A8%A1%E7%89%88.jpg" alt="大注释实时模版">]</p>]]></content:encoded>
       
       
       <category domain="https://cjliblog.top/categories/%E8%84%9A%E6%9C%AC/">脚本</category>
