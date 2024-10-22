@@ -242,31 +242,6 @@
     
     
     <entry>
-      <title>Error java 错误 不支持发行版本5</title>
-      <link href="/2024/04/12/Error%20java%20%E9%94%99%E8%AF%AF%20%E4%B8%8D%E6%94%AF%E6%8C%81%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC5%20/"/>
-      <url>/2024/04/12/Error%20java%20%E9%94%99%E8%AF%AF%20%E4%B8%8D%E6%94%AF%E6%8C%81%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC5%20/</url>
-      
-        <content type="html"><![CDATA[<p>搬运搬运！！！<a href="https://blog.csdn.net/qq_51263533/article/details/120209830">https://blog.csdn.net/qq_51263533/article/details/120209830</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> java </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> java </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>解决conda太慢的方案</title>
       <link href="/2024/04/12/%E8%A7%A3%E5%86%B3conda%E5%A4%AA%E6%85%A2%E7%9A%84%E6%96%B9%E6%A1%88/"/>
       <url>/2024/04/12/%E8%A7%A3%E5%86%B3conda%E5%A4%AA%E6%85%A2%E7%9A%84%E6%96%B9%E6%A1%88/</url>
@@ -311,25 +286,6 @@
     
     
     <entry>
-      <title>markdown空行添加br的脚本</title>
-      <link href="/2023/12/13/markdown%E7%A9%BA%E8%A1%8C%E6%B7%BB%E5%8A%A0br%E8%84%9A%E6%9C%AC/"/>
-      <url>/2023/12/13/markdown%E7%A9%BA%E8%A1%8C%E6%B7%BB%E5%8A%A0br%E8%84%9A%E6%9C%AC/</url>
-      
-        <content type="html"><![CDATA[<br><p>写博客的时候遇到的问题，因为md在web上空行是自动删除的，除非使用<code>&lt;/br&gt;</code>，因此编写一下python脚本</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add_br_to_empty_lines</span>(<span class="params">input_file, output_file</span>):</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(input_file, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">        lines = file.readlines()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(output_file, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">            <span class="keyword">if</span> line.strip() == <span class="string">&#x27;&#x27;</span>:</span><br><span class="line">                file.write(<span class="string">&#x27;&lt;/br&gt;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                file.write(line)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用示例</span></span><br><span class="line">input_md_file = <span class="string">&#x27;s:/11953/Desk/learning_doc.md&#x27;</span>  <span class="comment"># 替换成你的Markdown文件名</span></span><br><span class="line">output_md_file = <span class="string">&#x27;s:/11953/Desk/233.md&#x27;</span>  <span class="comment"># 替换成输出文件名</span></span><br><span class="line">add_br_to_empty_lines(input_md_file, output_md_file)</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术贴 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>go的入门</title>
       <link href="/2023/12/13/go%E7%9A%84%E5%85%A5%E9%97%A8/"/>
       <url>/2023/12/13/go%E7%9A%84%E5%85%A5%E9%97%A8/</url>
@@ -340,6 +296,25 @@
       <categories>
           
           <category> go </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>markdown空行添加br的脚本</title>
+      <link href="/2023/12/13/markdown%E7%A9%BA%E8%A1%8C%E6%B7%BB%E5%8A%A0br%E8%84%9A%E6%9C%AC/"/>
+      <url>/2023/12/13/markdown%E7%A9%BA%E8%A1%8C%E6%B7%BB%E5%8A%A0br%E8%84%9A%E6%9C%AC/</url>
+      
+        <content type="html"><![CDATA[<br><p>写博客的时候遇到的问题，因为md在web上空行是自动删除的，除非使用<code>&lt;/br&gt;</code>，因此编写一下python脚本</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add_br_to_empty_lines</span>(<span class="params">input_file, output_file</span>):</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(input_file, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">        lines = file.readlines()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(output_file, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">            <span class="keyword">if</span> line.strip() == <span class="string">&#x27;&#x27;</span>:</span><br><span class="line">                file.write(<span class="string">&#x27;&lt;/br&gt;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                file.write(line)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用示例</span></span><br><span class="line">input_md_file = <span class="string">&#x27;s:/11953/Desk/learning_doc.md&#x27;</span>  <span class="comment"># 替换成你的Markdown文件名</span></span><br><span class="line">output_md_file = <span class="string">&#x27;s:/11953/Desk/233.md&#x27;</span>  <span class="comment"># 替换成输出文件名</span></span><br><span class="line">add_br_to_empty_lines(input_md_file, output_md_file)</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术贴 </category>
           
       </categories>
       
