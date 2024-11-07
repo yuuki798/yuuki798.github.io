@@ -15,8 +15,32 @@
     <atom:link href="https://cjliblog.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>银屏之下，龙游四海。</description>
-    <pubDate>Sun, 03 Nov 2024 15:45:28 GMT</pubDate>
+    <pubDate>Thu, 07 Nov 2024 16:05:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>第二周学习笔记</title>
+      <link>https://cjliblog.top/2024/11/06/%E7%AC%AC%E4%BA%8C%E5%91%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <guid>https://cjliblog.top/2024/11/06/%E7%AC%AC%E4%BA%8C%E5%91%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <pubDate>Tue, 05 Nov 2024 16:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;h2 id=&quot;字节青训营&quot;&gt;&lt;a href=&quot;#字节青训营&quot; class=&quot;headerlink&quot; title=&quot;字节青训营&quot;&gt;&lt;/a&gt;字节青训</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="字节青训营"><a href="#字节青训营" class="headerlink" title="字节青训营"></a>字节青训营</h2><h3 id="算法题"><a href="#算法题" class="headerlink" title="算法题"></a>算法题</h3><h4 id="DNA序列编辑距离"><a href="#DNA序列编辑距离" class="headerlink" title="DNA序列编辑距离"></a>DNA序列编辑距离</h4><h3 id="打卡"><a href="#打卡" class="headerlink" title="打卡"></a>打卡</h3><p>算法*2</p><p>AI 练中学 run 3个*2</p><p>视频*2</p><h2 id="uber阅读"><a href="#uber阅读" class="headerlink" title="uber阅读"></a>uber阅读</h2><p>（广告位招租）</p><h2 id="restful"><a href="#restful" class="headerlink" title="restful"></a>restful</h2><h3 id="设计上的总结"><a href="#设计上的总结" class="headerlink" title="设计上的总结"></a>设计上的总结</h3><table><thead><tr><th>方法</th><th>主要用途</th><th>请求体</th><th>幂等性</th><th>安全性</th><th>备注</th></tr></thead><tbody><tr><td>GET</td><td>获取资源</td><td>无</td><td>是</td><td>是</td><td>无状态，不能改变服务器数据</td></tr><tr><td>POST</td><td>创建或提交数据</td><td>有</td><td>否</td><td>否</td><td>可能导致资源变化</td></tr><tr><td>PUT</td><td>更新资源或创建新资源</td><td>有（完整资源）</td><td>是</td><td>否</td><td>需提供完整的资源表示</td></tr><tr><td>DELETE</td><td>删除资源</td><td>可选（但常不使用）</td><td>是</td><td>否</td><td>通常只指定要删除的资源</td></tr></tbody></table><p>总的来说，我认识了put和delete（之前没真正用过），主要是要有路径参数来指定资源，然后put还要再用body中的json来指定改变的东西，delete的话一般gorm直接执行软删除。</p><p>另外，如果要一次处理多个资源的话，就不需要路径参数了，直接传json，其实和post差不多，就是一个标记的差别。但是有标记起码也可以很好认出这个方法是干嘛的。</p><p>性能差异并不显著，这只是一种规范。</p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2>]]></content:encoded>
+      
+      
+      <category domain="https://cjliblog.top/categories/%E5%AD%A6%E4%B9%A0%E6%89%93%E5%8D%A1/">学习打卡</category>
+      
+      
+      
+      <comments>https://cjliblog.top/2024/11/06/%E7%AC%AC%E4%BA%8C%E5%91%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>人格与事业</title>
@@ -250,32 +274,6 @@
       
       
       <comments>https://cjliblog.top/2024/07/06/24-7-6/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>golang学习笔记</title>
-      <link>https://cjliblog.top/2024/07/06/golang%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-      <guid>https://cjliblog.top/2024/07/06/golang%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <pubDate>Fri, 05 Jul 2024 16:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h1 id=&quot;golang基础&quot;&gt;&lt;a href=&quot;#golang基础&quot; class=&quot;headerlink&quot; title=&quot;golang基础&quot;&gt;&lt;/a&gt;golang基础&lt;/h1&gt;&lt;h2 id=&quot;1-unsafe包解读&quot;&gt;&lt;a href=&quot;#1-unsafe包解读&quot; class</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h1 id="golang基础"><a href="#golang基础" class="headerlink" title="golang基础"></a>golang基础</h1><h2 id="1-unsafe包解读"><a href="#1-unsafe包解读" class="headerlink" title="1.unsafe包解读"></a>1.unsafe包解读</h2><p>绕过安全规则的方法，比如获取内存信息的sizeof方法。</p><p>unsafe包应当主要用于程序员调试，而不能出现在生产应用。</p><h2 id="2-获得字符串的指针"><a href="#2-获得字符串的指针" class="headerlink" title="2.获得字符串的指针"></a>2.获得字符串的指针</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line">sh :=(*reflect.StringHeader)(unsafe.Pointer(&amp;s))</span><br></pre></td></tr></table></figure><p>s是字符串，由于字符串的runtime底层包是私有法方法，但是reflect里面有StringHeader方法作为public的映射，因此先强转成指针，然后再强转成StringHeader。注意，这个过程中地址不会发生改变。</p><p>其中，包含一个Data指针（原始的int）和一个Len（int）。</p><p><img src="https://m.qpic.cn/psc?/V53kfs7M0yNvo22mPmRx0m705V1QyDz1/TmEUgtj9EK6.7V8ajmQrEMD*9Zg.P8RU7ZvFcGgmLScgtg7eIeJxpZY6*AJ*VSCcTgMqP0G75RabbEJ7ZMY15lPODWpyCc1KQki*7ql*Tzs!/b&bo=mgLTAAAAAAABB2s!&rf=viewer_4" alt="img"></p><h2 id="3-rune类型是什么？"><a href="#3-rune类型是什么？" class="headerlink" title="3.rune类型是什么？"></a>3.rune类型是什么？</h2><p>可以理解成utf8的类型。因为不管是一个汉字还是一个字母，都是一个单位的rune。因此它还和传统意义上的char有所区别。它是int32类型，也就是说是int（64）的一半。</p><h2 id="4-切片"><a href="#4-切片" class="headerlink" title="4.切片"></a>4.切片</h2><p>个人感觉go的切片相当于java中的arraylist，进行一个主动开辟空间，然后动态扩容的自动化操作。</p><p>那么关于容量调整，其实arraylist和slice都是默认扩大，而不会缩小，除非把它释放。</p><p>还有一个点就是slice可以由数组创建，因为它的底层cap是数组结构，因此可能产生slice在cap里的偏移，比如从下标为3开始，而arraylist一定是在cap（容量）里顶格的，除非做一些复杂的底层操作。</p><p>arraylist的扩容是初始为10，每次1.5倍。而slice的扩容是每次两倍（当len&gt;1024，每次增加25%）。</p><p>这二者都线程不安全。原因在于：扩容的时候废弃原来的地址，导致其他协程（线程）会发生错误。</p><h2 id="5-哈希"><a href="#5-哈希" class="headerlink" title="5.哈希"></a>5.哈希</h2><p>java和go的hashmap（go就是map）都采用链式寻址。一个地址一条链，叫做桶。go的桶里面包括一个bmap数组（$2^B$个单位，B来自结构体的字段），有一个nextoverflow字段，指向链表中的下一个桶。一个bmap可以放bucketCnt个键值对，bucketCnt默认值为8，里面放tophash、key、elem（value）、overflow（若溢出指针）等。</p><h4 id="关于扩容："><a href="#关于扩容：" class="headerlink" title="关于扩容："></a>关于扩容：</h4><p>当负载因子 $load factor&#x3D;\frac{elemNum}{bucketNum}&gt;6.5$ 或溢出桶数量过多时会开辟新桶，届时采用渐进式（incremental）扩容，即老的桶依然存在并保存在对象的oldBucket字段，当每次操作map（插入或删除）之后会迁移一定量的桶，直到全部完成，然后对老桶数组进行垃圾回收。</p><p>也正因为渐进式扩容，因此线程也不安全，因此有必要加互斥锁（mutex）。</p><h4 id="关于Sync-Map"><a href="#关于Sync-Map" class="headerlink" title="关于Sync.Map"></a>关于Sync.Map</h4><p>由于扩容的线程不安全，衍生出官方的数据结构——Sync包下的Map。</p><p>该结构有四个字段：mu，read，dirty和missed。</p><p>主要分成两线存key，分为read和dirty两种存储结构，而value共用一份内存，适用于读多写少的情况。</p><p>查、改：一般情况读走read（一个只读快照），若read中找不到，锁住mu，走dirty。</p><p>追加：添加数据走dirty（写时才发生read的复制并追加），而在读read会有未命中次数累加到missed字段，missed达到len(dirty)的时候，将发生《dirty上移》，也就是把read指针指向dirty，dirty指针指向nil。</p><p>删除：直接让read的某个key指向nil。如果是dirty中的追加键（read中找不到的key）被删除，则上提成read时给nil改成expunged，用于标记下一次复制到新dirty时不再考虑这个key。</p>]]></content:encoded>
-      
-      
-      <category domain="https://cjliblog.top/categories/%E6%97%A5%E8%AE%B0/">日记</category>
-      
-      
-      <category domain="https://cjliblog.top/tags/%E6%97%A5%E8%AE%B0/">日记</category>
-      
-      
-      <comments>https://cjliblog.top/2024/07/06/golang%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#disqus_thread</comments>
       
     </item>
     

@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>第二周学习笔记</title>
+      <link href="/2024/11/06/%E7%AC%AC%E4%BA%8C%E5%91%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/2024/11/06/%E7%AC%AC%E4%BA%8C%E5%91%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="字节青训营"><a href="#字节青训营" class="headerlink" title="字节青训营"></a>字节青训营</h2><h3 id="算法题"><a href="#算法题" class="headerlink" title="算法题"></a>算法题</h3><h4 id="DNA序列编辑距离"><a href="#DNA序列编辑距离" class="headerlink" title="DNA序列编辑距离"></a>DNA序列编辑距离</h4><h3 id="打卡"><a href="#打卡" class="headerlink" title="打卡"></a>打卡</h3><p>算法*2</p><p>AI 练中学 run 3个*2</p><p>视频*2</p><h2 id="uber阅读"><a href="#uber阅读" class="headerlink" title="uber阅读"></a>uber阅读</h2><p>（广告位招租）</p><h2 id="restful"><a href="#restful" class="headerlink" title="restful"></a>restful</h2><h3 id="设计上的总结"><a href="#设计上的总结" class="headerlink" title="设计上的总结"></a>设计上的总结</h3><table><thead><tr><th>方法</th><th>主要用途</th><th>请求体</th><th>幂等性</th><th>安全性</th><th>备注</th></tr></thead><tbody><tr><td>GET</td><td>获取资源</td><td>无</td><td>是</td><td>是</td><td>无状态，不能改变服务器数据</td></tr><tr><td>POST</td><td>创建或提交数据</td><td>有</td><td>否</td><td>否</td><td>可能导致资源变化</td></tr><tr><td>PUT</td><td>更新资源或创建新资源</td><td>有（完整资源）</td><td>是</td><td>否</td><td>需提供完整的资源表示</td></tr><tr><td>DELETE</td><td>删除资源</td><td>可选（但常不使用）</td><td>是</td><td>否</td><td>通常只指定要删除的资源</td></tr></tbody></table><p>总的来说，我认识了put和delete（之前没真正用过），主要是要有路径参数来指定资源，然后put还要再用body中的json来指定改变的东西，delete的话一般gorm直接执行软删除。</p><p>另外，如果要一次处理多个资源的话，就不需要路径参数了，直接传json，其实和post差不多，就是一个标记的差别。但是有标记起码也可以很好认出这个方法是干嘛的。</p><p>性能差异并不显著，这只是一种规范。</p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习打卡 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>人格与事业</title>
       <link href="/2024/11/03/%E4%BA%BA%E6%A0%BC%E4%B8%8E%E4%BA%8B%E4%B8%9A/"/>
       <url>/2024/11/03/%E4%BA%BA%E6%A0%BC%E4%B8%8E%E4%BA%8B%E4%B8%9A/</url>
