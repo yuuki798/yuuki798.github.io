@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>无题</title>
+      <link href="/2024/11/09/%E6%97%A0%E9%A2%98/"/>
+      <url>/2024/11/09/%E6%97%A0%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h4 id="一"><a href="#一" class="headerlink" title="一"></a>一</h4><p>是不是时常会思考自己的一些特立独行会让自己失去认同感，从而丢失能量。突然发现一些认真去写文字，表达准确，也理解地准确的人非常厉害。我如果只是每天没心没肺写一些乌漆嘛黑的文字，却没有一些能让自己触动的到的深度，仿佛就是一种记流水账，也不会让这个世界上不同的灵魂深有感触。</p><p>我也不是完全的e人，社交时候的热情高涨会在忽然寂静的落差下显得能量极低。我想我可能只是喜欢说话罢了，但是也并不是靠社交回复能量。换一个角度说，社交往往让人感到没有学习到东西，或者说获得实质性的提升，那么容易让人陷入焦虑。如今环境是充满压力和焦虑的，每个人都无法避免。</p><h4 id="二"><a href="#二" class="headerlink" title="二"></a>二</h4><p>听闻一个朋友的父亲去世了。很突然，我甚至愿意引用ta的原文，但是很可惜ta删掉了，可能是为了减轻一些思想上的负担。这件事情让我感到非常深刻。深有感慨，如果这件事情发生在自己身上又会是什么样的角色和事件。这个世界总会有人意外离开，我们先前没有算计过，但这个世界总有人的亲人意外离开。</p><p>这其实可以到另一个角度理解。不管是物理意义上的离开，开始感情方面的离开，一些突然的缺失，也许会找到补位，也许可以理解为一些使命已经cover了，或者说这个角色在你的剧本里已经over了，但是这一段遗憾永远无法弥补。你可以尝试去淡忘，去漠视，但是心有余悸的本性一定避不开的，所有一切的淡忘漠视，不过是为了避免自己情绪化的一种应激反应，这种反应，会遗留成为终身的性格缺陷，会成为麻木的人，成为失去色彩的人。</p><p>所以我崇尚拥抱接纳。有的人把一切变数理解为剧本，但我们都知道这只不过是一种说辞，或者说是安慰自己的言语罢了。没有什么定数的东西，也没有什么值得念念不忘的遗憾的东西。我们接纳一切变数，承认平凡，承认无法控制一切，而转向寻找自己可以掌握的、热爱的东西去丰富和填补突然的空缺。固然一些东西是真正陷入绝望的深渊，而不再机会挽留的，比如死亡。所以人生又算得上什么呢，蜉蝣尔。</p><p>另外，保持身体健康吧。今天喝了好多酒，还熬夜，这显然是不妙的，希望可以改善。</p><h4 id="三"><a href="#三" class="headerlink" title="三"></a>三</h4><p>上了班之后会有一些不一样的思维，那就是优化。一个产品单纯CRUD，那可能只是外包公司。那如果是互联网公司，除了大量CRUD，可能就需要考虑更多性能上提升的事情。但是在华子这种研究性质的地方，CRUD是不存在的，而真正考虑的就是底层实现的原理我们如何去理解、梳理以及构建出有更好性能的模型或架构。然后后续工作还有基于此去优化，给出一套更好的解决方案。有的时候我们会觉得“一套成熟的解决方案”非常适合追捧，然而还有一条道路往往被人忽略，它未知，并且因人而异，那就是创新。创新要求推翻传统的方案，给出一套小部分基于先前理论，大部分架空而新颖的东西。中国的教育是非常缺失这一块的，因为经验和成熟方案主导一切。看到java市场就懂了。我其实一直觉得go和java比起来一定是前瞻性的，但是一定会有大量的喷子站队java，然后说那一套“生态”，贬低这个世界其他所有人和所有语言（泼妇行为）。其实泼妇行为和固执行为往往是捆绑的，固执，那么一定排除一切异己。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 散文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 散文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>第二周学习笔记</title>
       <link href="/2024/11/06/%E7%AC%AC%E4%BA%8C%E5%91%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
       <url>/2024/11/06/%E7%AC%AC%E4%BA%8C%E5%91%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="字节青训营"><a href="#字节青训营" class="headerlink" title="字节青训营"></a>字节青训营</h2><h3 id="算法题"><a href="#算法题" class="headerlink" title="算法题"></a>算法题</h3><h4 id="DNA序列编辑距离"><a href="#DNA序列编辑距离" class="headerlink" title="DNA序列编辑距离"></a>DNA序列编辑距离</h4><h3 id="打卡"><a href="#打卡" class="headerlink" title="打卡"></a>打卡</h3><p>算法*2</p><p>AI 练中学 run 3个*2</p><p>视频*2</p><h2 id="uber阅读"><a href="#uber阅读" class="headerlink" title="uber阅读"></a>uber阅读</h2><p>（广告位招租）</p><h2 id="restful"><a href="#restful" class="headerlink" title="restful"></a>restful</h2><h3 id="设计上的总结"><a href="#设计上的总结" class="headerlink" title="设计上的总结"></a>设计上的总结</h3><table><thead><tr><th>方法</th><th>主要用途</th><th>请求体</th><th>幂等性</th><th>安全性</th><th>备注</th></tr></thead><tbody><tr><td>GET</td><td>获取资源</td><td>无</td><td>是</td><td>是</td><td>无状态，不能改变服务器数据</td></tr><tr><td>POST</td><td>创建或提交数据</td><td>有</td><td>否</td><td>否</td><td>可能导致资源变化</td></tr><tr><td>PUT</td><td>更新资源或创建新资源</td><td>有（完整资源）</td><td>是</td><td>否</td><td>需提供完整的资源表示</td></tr><tr><td>DELETE</td><td>删除资源</td><td>可选（但常不使用）</td><td>是</td><td>否</td><td>通常只指定要删除的资源</td></tr></tbody></table><p>总的来说，我认识了put和delete（之前没真正用过），主要是要有路径参数来指定资源，然后put还要再用body中的json来指定改变的东西，delete的话一般gorm直接执行软删除。</p><p>另外，如果要一次处理多个资源的话，就不需要路径参数了，直接传json，其实和post差不多，就是一个标记的差别。但是有标记起码也可以很好认出这个方法是干嘛的。</p><p>性能差异并不显著，这只是一种规范。</p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="字节青训营"><a href="#字节青训营" class="headerlink" title="字节青训营"></a>字节青训营</h2><h3 id="算法题"><a href="#算法题" class="headerlink" title="算法题"></a>算法题</h3><h4 id="DNA序列编辑距离"><a href="#DNA序列编辑距离" class="headerlink" title="DNA序列编辑距离"></a>DNA序列编辑距离</h4><h4 id="找出整型数组中占比超过一半的数"><a href="#找出整型数组中占比超过一半的数" class="headerlink" title="找出整型数组中占比超过一半的数"></a>找出整型数组中占比超过一半的数</h4><h3 id="打卡"><a href="#打卡" class="headerlink" title="打卡"></a>打卡</h3><p>算法*3</p><p>AI 练中学 run 3个*3</p><p>视频*3</p><h2 id="uber阅读"><a href="#uber阅读" class="headerlink" title="uber阅读"></a>uber阅读</h2><p>（广告位招租）</p><h2 id="restful"><a href="#restful" class="headerlink" title="restful"></a>restful</h2><h3 id="设计上的总结"><a href="#设计上的总结" class="headerlink" title="设计上的总结"></a>设计上的总结</h3><table><thead><tr><th>方法</th><th>主要用途</th><th>请求体</th><th>幂等性</th><th>安全性</th><th>备注</th></tr></thead><tbody><tr><td>GET</td><td>获取资源</td><td>无</td><td>是</td><td>是</td><td>无状态，不能改变服务器数据</td></tr><tr><td>POST</td><td>创建或提交数据</td><td>有</td><td>否</td><td>否</td><td>可能导致资源变化</td></tr><tr><td>PUT</td><td>更新资源或创建新资源</td><td>有（完整资源）</td><td>是</td><td>否</td><td>需提供完整的资源表示</td></tr><tr><td>DELETE</td><td>删除资源</td><td>可选（但常不使用）</td><td>是</td><td>否</td><td>通常只指定要删除的资源</td></tr></tbody></table><p>总的来说，我认识了put和delete（之前没真正用过），主要是要有路径参数来指定资源，然后put还要再用body中的json来指定改变的东西，delete的话一般gorm直接执行软删除。</p><p>另外，如果要一次处理多个资源的话，就不需要路径参数了，直接传json，其实和post差不多，就是一个标记的差别。但是有标记起码也可以很好认出这个方法是干嘛的。</p><p>性能差异并不显著，这只是一种规范。</p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2>]]></content>
       
       
       <categories>
