@@ -15,38 +15,13 @@
     <atom:link href="https://cjliblog.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>银屏之下，龙游四海。</description>
-    <pubDate>Fri, 15 Nov 2024 16:02:06 GMT</pubDate>
+    <pubDate>Sat, 16 Nov 2024 04:55:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>第三周学习笔记</title>
-      <link>https://cjliblog.top/2024/11/16/%E7%AC%AC%E4%B8%89%E5%91%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-      <guid>https://cjliblog.top/2024/11/16/%E7%AC%AC%E4%B8%89%E5%91%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <pubDate>Fri, 15 Nov 2024 16:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;上班时间禁止摸鱼，不太好写学习笔记了，公司内产出得算公司知识产权的就是说（x）。所以得停更一会儿，周末写一点或者午休写一点就好了。&lt;/p&gt;
-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>上班时间禁止摸鱼，不太好写学习笔记了，公司内产出得算公司知识产权的就是说（x）。所以得停更一会儿，周末写一点或者午休写一点就好了。</p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2>]]></content:encoded>
-      
-      
-      <category domain="https://cjliblog.top/categories/%E5%AD%A6%E4%B9%A0%E6%89%93%E5%8D%A1/">学习打卡</category>
-      
-      
-      
-      <comments>https://cjliblog.top/2024/11/16/%E7%AC%AC%E4%B8%89%E5%91%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>人格的反思</title>
-      <link>https://cjliblog.top/2024/11/09/%E4%BA%BA%E6%A0%BC%E7%9A%84%E5%8F%8D%E6%80%9D/</link>
-      <guid>https://cjliblog.top/2024/11/09/%E4%BA%BA%E6%A0%BC%E7%9A%84%E5%8F%8D%E6%80%9D/</guid>
+      <title>生活和情绪的反思</title>
+      <link>https://cjliblog.top/2024/11/09/%E7%94%9F%E6%B4%BB%E5%92%8C%E6%83%85%E7%BB%AA%E7%9A%84%E5%8F%8D%E6%80%9D/</link>
+      <guid>https://cjliblog.top/2024/11/09/%E7%94%9F%E6%B4%BB%E5%92%8C%E6%83%85%E7%BB%AA%E7%9A%84%E5%8F%8D%E6%80%9D/</guid>
       <pubDate>Fri, 08 Nov 2024 16:00:00 GMT</pubDate>
       
         
@@ -67,7 +42,7 @@
       <category domain="https://cjliblog.top/tags/%E6%95%A3%E6%96%87/">散文</category>
       
       
-      <comments>https://cjliblog.top/2024/11/09/%E4%BA%BA%E6%A0%BC%E7%9A%84%E5%8F%8D%E6%80%9D/#disqus_thread</comments>
+      <comments>https://cjliblog.top/2024/11/09/%E7%94%9F%E6%B4%BB%E5%92%8C%E6%83%85%E7%BB%AA%E7%9A%84%E5%8F%8D%E6%80%9D/#disqus_thread</comments>
       
     </item>
     
@@ -275,6 +250,32 @@
       
       
       <comments>https://cjliblog.top/2024/08/20/%E9%BB%91%E7%A5%9E%E8%AF%9D%E6%82%9F%E7%A9%BA%E6%97%A5%E4%B8%8E%E6%88%91%E6%97%A0%E5%85%B3%E4%BD%86%E6%98%AF%E6%88%91%E6%B2%A1%E7%9D%A1%E7%9D%80%E5%A4%A9%E5%B0%B1%E4%BA%AE%E4%BA%86/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>国内镜像</title>
+      <link>https://cjliblog.top/2024/08/16/docker%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%9C%80%E6%96%B0%E2%80%94%E2%80%94%E5%A4%87%E4%BB%BD/</link>
+      <guid>https://cjliblog.top/2024/08/16/docker%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%9C%80%E6%96%B0%E2%80%94%E2%80%94%E5%A4%87%E4%BB%BD/</guid>
+      <pubDate>Thu, 15 Aug 2024 16:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;DockerHub国内镜像源列表&quot;&gt;&lt;a href=&quot;#DockerHub国内镜像源列表&quot; class=&quot;headerlink&quot; title=&quot;DockerHub国内镜像源列表&quot;&gt;&lt;/a&gt;DockerHub国内镜像源列表&lt;/h2&gt;&lt;p&gt;此列表只收录无需限定条件的D</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="DockerHub国内镜像源列表"><a href="#DockerHub国内镜像源列表" class="headerlink" title="DockerHub国内镜像源列表"></a>DockerHub国内镜像源列表</h2><p>此列表只收录无需限定条件的DockerHub镜像源，感谢这些公益服务者。</p><p><strong>2024年6月18日 亲测可用</strong></p><table><thead><tr><th align="left">DockerHub镜像仓库</th><th align="left">镜像加速器地址</th></tr></thead><tbody><tr><td align="left"><a href="https://hub.uuuadc.top/">Docker镜像加速站 722</a></td><td align="left"><code>https://hub.uuuadc.top/</code></td></tr><tr><td align="left"></td><td align="left"><code>docker.1panel.live</code></td></tr><tr><td align="left"></td><td align="left"><code>hub.rat.dev</code></td></tr><tr><td align="left"><a href="https://docker.anyhub.us.kg/">DockerHub 镜像加速代理 316</a></td><td align="left"><code>https://docker.anyhub.us.kg</code></td></tr><tr><td align="left"></td><td align="left"><code>https://docker.chenby.cn</code></td></tr><tr><td align="left"></td><td align="left"><code>https://dockerhub.jobcher.com/</code></td></tr><tr><td align="left"><a href="https://dockerhub.icu/">镜像使用说明 289</a></td><td align="left"><code>https://dockerhub.icu</code></td></tr><tr><td align="left"><a href="https://docker.ckyl.me/">Docker镜像加速站 108</a></td><td align="left"><code>https://docker.ckyl.me</code></td></tr><tr><td align="left"><a href="https://docker.awsl9527.cn/">镜像使用说明 114</a></td><td align="left"><code>https://docker.awsl9527.cn</code></td></tr><tr><td align="left"><a href="https://docker.hpcloud.cloud/">镜像使用说明 90</a></td><td align="left"><code>https://docker.hpcloud.cloud</code></td></tr><tr><td align="left"><a href="https://atomhub.openatom.cn/">AtomHub 可信镜像仓库平台 112</a>（只包含基础镜像，共336个）</td><td align="left"><code>https://atomhub.openatom.cn</code></td></tr><tr><td align="left"><a href="https://github.com/DaoCloud/public-image-mirror">DaoCloud 镜像站 223</a></td><td align="left"><code>https://docker.m.daocloud.io</code></td></tr></tbody></table><h3 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h3><ol><li>为了加速镜像拉取，使用以下命令设置<strong>registry mirror</strong></li></ol><blockquote><p>支持系统：Ubuntu 16.04+、Debian 8+、CentOS 7+</p></blockquote><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo <span class="built_in">mkdir</span> -p /etc/docker</span><br><span class="line">sudo <span class="built_in">tee</span> /etc/docker/daemon.json &lt;&lt;<span class="string">EOF</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">    &quot;registry-mirrors&quot;: [</span></span><br><span class="line"><span class="string">        &quot;https://hub.uuuadc.top&quot;,</span></span><br><span class="line"><span class="string">        &quot;https://docker.anyhub.us.kg&quot;,</span></span><br><span class="line"><span class="string">        &quot;https://dockerhub.jobcher.com&quot;,</span></span><br><span class="line"><span class="string">        &quot;https://dockerhub.icu&quot;,</span></span><br><span class="line"><span class="string">        &quot;https://docker.ckyl.me&quot;,</span></span><br><span class="line"><span class="string">        &quot;https://docker.awsl9527.cn&quot;</span></span><br><span class="line"><span class="string">    ]</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">EOF</span></span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure><ol><li>使用DockerHub Proxy，以下以 <code>hub.uuuadc.top</code> 为例：可以根据列表自行替换</li></ol><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">docker pull hub.uuuadc.top/library/mysql:5.7</span><br></pre></td></tr></table></figure><p>说明：library是一个特殊的命名空间，它代表的是官方镜像。如果是某个用户的镜像就把library替换为镜像的用户名</p><p>原文链接：<br><a href="https://www.wangdu.site/course/2109.html">https://www.wangdu.site/course/2109.html</a></p><h2 id="npm镜像"><a href="#npm镜像" class="headerlink" title="npm镜像"></a>npm镜像</h2><p><a href="https://cloud.tencent.com/developer/article/1372949">https://cloud.tencent.com/developer/article/1372949</a></p><p>使用自己的服务器作为上网代理来更换 IP 访问网站，可以通过设置一个代理服务器来实现。以下是使用 SSH 隧道和 Squid 代理两种常见的实现方法：</p><h2 id="更换IP方法"><a href="#更换IP方法" class="headerlink" title="更换IP方法"></a>更换IP方法</h2><h3 id="方法一：使用-SSH-隧道"><a href="#方法一：使用-SSH-隧道" class="headerlink" title="方法一：使用 SSH 隧道"></a>方法一：使用 SSH 隧道</h3><p>这种方法适合临时更换 IP。</p><h4 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h4><ol><li><p><strong>拥有一台远程服务器</strong>：确保你有一台可以通过 SSH 访问的远程服务器，该服务器的 IP 地址将成为你访问网站时显示的 IP 地址。</p></li><li><p><strong>使用 SSH 隧道</strong>：</p><ul><li><p>在本地计算机上打开终端（或使用 PuTTY 等 SSH 客户端）。</p></li><li><p>使用以下命令创建一个 SSH 隧道：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -D 1080 -q -C -N username@your_server_ip</span><br></pre></td></tr></table></figure></li><li><p>解释：</p><ul><li><code>-D 1080</code>：在本地创建一个动态端口转发（SOCKS 代理）在端口 1080。</li><li><code>-q</code>：安静模式，减少输出。</li><li><code>-C</code>：压缩数据。</li><li><code>-N</code>：不执行远程命令，仅转发端口。</li><li><code>username@your_server_ip</code>：你的服务器用户名和 IP 地址。</li></ul></li></ul></li><li><p><strong>配置浏览器</strong>：</p><ul><li>在浏览器中设置代理，使用 SOCKS5 代理，地址为 <code>127.0.0.1</code>，端口为 <code>1080</code>。</li><li>这样，你的浏览器访问网络时就会通过你的服务器，显示服务器的 IP 地址。</li></ul></li></ol><h3 id="方法二：使用-Squid-代理"><a href="#方法二：使用-Squid-代理" class="headerlink" title="方法二：使用 Squid 代理"></a>方法二：使用 Squid 代理</h3><p>适合长期使用或多设备共享。</p><h4 id="步骤：-1"><a href="#步骤：-1" class="headerlink" title="步骤："></a>步骤：</h4><ol><li><p><strong>安装 Squid</strong>：</p><ul><li><p>登录到你的服务器，安装 Squid 代理服务器：</p><p><strong>Debian&#x2F;Ubuntu</strong>:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install squid</span><br></pre></td></tr></table></figure><p><strong>CentOS&#x2F;RHEL</strong>:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install squid</span><br></pre></td></tr></table></figure></li></ul></li><li><p><strong>配置 Squid</strong>：</p><ul><li><p>编辑 Squid 的配置文件（通常位于 <code>/etc/squid/squid.conf</code>）：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/squid/squid.conf</span><br></pre></td></tr></table></figure></li><li><p>查找并修改以下配置：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http_access allow all</span><br></pre></td></tr></table></figure></li><li><p>设置 Squid 监听的端口（通常是 3128）：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http_port 3128</span><br></pre></td></tr></table></figure></li><li><p>保存并退出配置文件。</p></li></ul></li><li><p><strong>启动 Squid</strong>：</p><ul><li><p>启动 Squid 服务并设置为开机自启：</p><p><strong>Debian&#x2F;Ubuntu</strong>:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl start squid</span><br><span class="line">sudo systemctl <span class="built_in">enable</span> squid</span><br></pre></td></tr></table></figure><p><strong>CentOS&#x2F;RHEL</strong>:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl start squid</span><br><span class="line">sudo systemctl <span class="built_in">enable</span> squid</span><br></pre></td></tr></table></figure></li></ul></li><li><p><strong>配置防火墙</strong>（如果适用）：</p><ul><li>确保服务器上的防火墙允许 Squid 的端口（如 3128）的入站连接。</li></ul></li><li><p><strong>配置客户端浏览器</strong>：</p><ul><li>在浏览器或操作系统的网络设置中，将代理服务器设置为你服务器的 IP 地址，端口为 Squid 代理的端口（通常是 3128）。</li></ul></li></ol><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul><li><strong>SSH 隧道</strong>：适合临时个人使用，配置简单，但需要在每次使用时手动建立连接。</li><li><strong>Squid 代理</strong>：适合多用户和长期使用，配置稍复杂，但更加灵活和强大。</li></ul><p>无论使用哪种方法，你的 IP 地址都会显示为服务器的 IP，便于更换访问某些网站时的地理位置或绕过某些限制。</p>]]></content:encoded>
+      
+      
+      <category domain="https://cjliblog.top/categories/%E6%97%A5%E8%AE%B0/">日记</category>
+      
+      
+      <category domain="https://cjliblog.top/tags/%E6%97%A5%E8%AE%B0/">日记</category>
+      
+      
+      <comments>https://cjliblog.top/2024/08/16/docker%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%9C%80%E6%96%B0%E2%80%94%E2%80%94%E5%A4%87%E4%BB%BD/#disqus_thread</comments>
       
     </item>
     
